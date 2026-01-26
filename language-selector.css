@@ -1,4 +1,4 @@
-/* Language Selector Styles */
+
 .language-selector {
     display: flex;
     gap: 0.25rem;
@@ -41,7 +41,7 @@
     outline-offset: 2px;
 }
 
-/* Mobile adjustments for language selector */
+
 @media (max-width: 767px) {
     .language-selector {
         order: -1;
@@ -53,7 +53,7 @@
     }
 }
 
-/* Smooth transition for content changes */
+
 [data-i18n] {
     transition: opacity var(--transition-fast);
 }

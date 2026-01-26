@@ -1,8 +1,8 @@
-// Theme Toggle
+
 const themeToggle = document.getElementById('theme-toggle');
 const html = document.documentElement;
 
-// Check for saved theme preference or default to 'light'
+
 const currentTheme = localStorage.getItem('theme') || 'light';
 html.setAttribute('data-theme', currentTheme);
 
@@ -13,14 +13,13 @@ themeToggle.addEventListener('click', () => {
     html.setAttribute('data-theme', newTheme);
     localStorage.setItem('theme', newTheme);
     
-    // Add a subtle animation to the toggle button
     themeToggle.style.transform = 'rotate(360deg)';
     setTimeout(() => {
         themeToggle.style.transform = '';
     }, 300);
 });
 
-// Mobile Menu Toggle
+
 const navToggle = document.getElementById('nav-toggle');
 const navMenu = document.getElementById('nav-menu');
 
@@ -30,7 +29,7 @@ navToggle.addEventListener('click', () => {
     document.body.style.overflow = navMenu.classList.contains('active') ? 'hidden' : '';
 });
 
-// Close mobile menu when clicking on a nav link
+
 const navLinks = document.querySelectorAll('.nav__link');
 navLinks.forEach(link => {
     link.addEventListener('click', () => {
@@ -40,7 +39,7 @@ navLinks.forEach(link => {
     });
 });
 
-// Close mobile menu when clicking outside
+
 document.addEventListener('click', (e) => {
     if (!navMenu.contains(e.target) && !navToggle.contains(e.target) && navMenu.classList.contains('active')) {
         navMenu.classList.remove('active');
@@ -49,7 +48,7 @@ document.addEventListener('click', (e) => {
     }
 });
 
-// Header Scroll Effect
+
 const header = document.getElementById('header');
 let lastScroll = 0;
 
@@ -65,7 +64,6 @@ window.addEventListener('scroll', () => {
     lastScroll = currentScroll;
 });
 
-// Active Navigation Link Highlighting
 const sections = document.querySelectorAll('.section');
 const navItems = document.querySelectorAll('.nav__link');
 
@@ -92,12 +90,10 @@ const observer = new IntersectionObserver((entries) => {
 
 sections.forEach(section => observer.observe(section));
 
-// Smooth Scroll for anchor links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         const href = this.getAttribute('href');
         
-        // Don't prevent default for empty href or just "#"
         if (href === '#' || href === '') return;
         
         e.preventDefault();
@@ -117,7 +113,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Intersection Observer for fade-in animations
 const fadeElements = document.querySelectorAll('.project-card, .tech__category, .highlight-card, .contact-method, .stat-card');
 
 const fadeObserverOptions = {
@@ -150,7 +145,7 @@ fadeElements.forEach(element => {
     fadeObserver.observe(element);
 });
 
-// Parallax effect for hero visual shapes
+
 const visualShapes = document.querySelectorAll('.visual__shape');
 
 window.addEventListener('scroll', () => {
@@ -163,37 +158,13 @@ window.addEventListener('scroll', () => {
     });
 });
 
-// Typing effect for hero subtitle (optional - can be enabled)
-/*
-const subtitleElement = document.querySelector('.hero__subtitle');
-if (subtitleElement) {
-    const subtitleText = subtitleElement.textContent;
-    subtitleElement.textContent = '';
-    
-    let charIndex = 0;
-    const typingSpeed = 50;
-    
-    function typeText() {
-        if (charIndex < subtitleText.length) {
-            subtitleElement.textContent += subtitleText.charAt(charIndex);
-            charIndex++;
-            setTimeout(typeText, typingSpeed);
-        }
-    }
-    
-    // Start typing after initial animations
-    setTimeout(typeText, 1500);
-}
-*/
 
-// Dynamic year in footer
 const footerYear = document.querySelector('.footer__copyright');
 if (footerYear) {
     const currentYear = new Date().getFullYear();
     footerYear.textContent = footerYear.textContent.replace('2025', currentYear);
 }
 
-// Add loading animation
 window.addEventListener('load', () => {
     document.body.style.opacity = '0';
     document.body.style.transition = 'opacity 0.3s ease-out';
@@ -203,10 +174,8 @@ window.addEventListener('load', () => {
     });
 });
 
-// Prevent flash of unstyled content
 document.documentElement.style.visibility = 'visible';
 
-// Easter egg: Konami code
 const konamiCode = ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight', 'b', 'a'];
 let konamiIndex = 0;
 
@@ -215,10 +184,8 @@ document.addEventListener('keydown', (e) => {
         konamiIndex++;
         
         if (konamiIndex === konamiCode.length) {
-            // Easter egg activated!
             document.body.style.animation = 'rainbow 2s linear infinite';
             
-            // Add rainbow animation
             const style = document.createElement('style');
             style.textContent = `
                 @keyframes rainbow {
@@ -240,7 +207,6 @@ document.addEventListener('keydown', (e) => {
     }
 });
 
-// Performance: Debounce scroll events
 function debounce(func, wait) {
     let timeout;
     return function executedFunction(...args) {
@@ -253,7 +219,6 @@ function debounce(func, wait) {
     };
 }
 
-// Add hover effect to project cards
 const projectCards = document.querySelectorAll('.project-card');
 projectCards.forEach(card => {
     card.addEventListener('mouseenter', (e) => {
@@ -266,35 +231,11 @@ projectCards.forEach(card => {
     });
 });
 
-// Cursor trail effect (optional, subtle)
-/*
-const cursor = document.createElement('div');
-cursor.className = 'cursor-trail';
-cursor.style.cssText = `
-    position: fixed;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background: var(--color-primary);
-    pointer-events: none;
-    mix-blend-mode: difference;
-    transition: transform 0.15s ease-out;
-    z-index: 9999;
-`;
-document.body.appendChild(cursor);
 
-document.addEventListener('mousemove', (e) => {
-    cursor.style.left = e.clientX + 'px';
-    cursor.style.top = e.clientY + 'px';
-});
-*/
-
-// Log for developers
 console.log('%c👋 Hola, ', 'font-size: 20px; font-weight: bold; color: #0066ff;');
 console.log('%cEste es mi correo: perezadria00@gmail.com', 'font-size: 14px; color: #00d4aa;');
 console.log('%c¡Gracias por visitar mi web!', 'font-size: 20px; font-weight: bold; color: #0066ff;');
 
-// Accessibility: Skip to main content
 const skipLink = document.createElement('a');
 skipLink.href = '#proyectos';
 skipLink.textContent = 'Saltar al contenido principal';

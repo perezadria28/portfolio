@@ -1,5 +1,3 @@
-// translations.js - Sistema de traducción para el portfolio
-
 const translations = {
   "es": {
     "nav": {
@@ -258,7 +256,6 @@ const translations = {
   }
 };
 
-// Función para obtener el idioma guardado o detectar el del navegador
 function getLanguage() {
   const saved = localStorage.getItem('language');
   if (saved && translations[saved]) {
@@ -269,7 +266,6 @@ function getLanguage() {
   return translations[browserLang] ? browserLang : 'es';
 }
 
-// Función para cambiar el idioma
 function setLanguage(lang) {
   if (!translations[lang]) {
     console.error(`Language ${lang} not found`);
@@ -281,11 +277,9 @@ function setLanguage(lang) {
   updateContent(lang);
 }
 
-// Función para actualizar el contenido de la página
 function updateContent(lang) {
   const t = translations[lang];
   
-  // Actualizar atributo data-lang en elementos traducibles
   document.querySelectorAll('[data-i18n]').forEach(element => {
     const key = element.getAttribute('data-i18n');
     const keys = key.split('.');
@@ -304,19 +298,16 @@ function updateContent(lang) {
       }
     }
   });
-  
-  // Actualizar los selectores de idioma activos
+
   document.querySelectorAll('.lang-selector').forEach(selector => {
     selector.classList.toggle('active', selector.getAttribute('data-lang') === lang);
   });
 }
 
-// Inicializar el idioma al cargar la página
 document.addEventListener('DOMContentLoaded', () => {
   const currentLang = getLanguage();
   setLanguage(currentLang);
   
-  // Añadir event listeners a los selectores de idioma
   document.querySelectorAll('.lang-selector').forEach(selector => {
     selector.addEventListener('click', (e) => {
       e.preventDefault();
@@ -326,7 +317,6 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
-// Exportar funciones para uso externo
 window.i18n = {
   setLanguage,
   getLanguage,
