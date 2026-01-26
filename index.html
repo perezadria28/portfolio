@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio de Adrià Pérez - Desarrollador Full Stack">
+    <title>Adrià Pérez | Full Stack Developer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="language-selector.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+</head>
+
+<body>
+    <!-- Header & Navigation -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">
+                <img src="foto_cv.jpg" alt="Adrià Pérez" class="nav__logo-img">
+                <span class="logo-pulse"></span>
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#proyectos" class="nav__link">
+                            <span data-i18n="nav.projects">Proyectos</span>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#sobre-mi" class="nav__link">
+                            <span data-i18n="nav.about">Sobre mí</span>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#tecnologias" class="nav__link">
+                            <span data-i18n="nav.technologies">Tecnologías</span>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contacto" class="nav__link">
+                            <span data-i18n="nav.contact">Contacto</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="nav__actions">
+                <!-- Selector de idioma -->
+                <div class="language-selector">
+                    <button class="lang-selector" data-lang="es" aria-label="Español">ES</button>
+                    <button class="lang-selector" data-lang="en" aria-label="English">EN</button>
+                    <button class="lang-selector" data-lang="ca" aria-label="Català">CA</button>
+                </div>
+
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                    <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                    <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+
+                <button class="nav__toggle" id="nav-toggle" aria-label="Toggle menu">
+                    <span class="nav__toggle-icon"></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="inicio">
+        <div class="container">
+            <div class="hero__content">
+                <div class="hero__badge">
+                    <span class="badge__dot"></span>
+                    <span class="badge__text" data-i18n="hero.badge">Disponible para trabajar</span>
+                </div>
+
+                <h1 class="hero__title">
+                    <span class="hero__greeting" data-i18n="hero.greeting">Hola, soy</span>
+                    <span class="hero__name">Adrià Pérez</span>
+                </h1>
+
+                <p class="hero__subtitle">
+                    <span class="highlight" data-i18n="hero.subtitle">Full Stack Developer</span>
+                </p>
+
+                <p class="hero__description" data-i18n="hero.description">
+                    Busco mi primera oportunidad profesional en un equipo técnico donde aplicar mis
+                    conocimientos, seguir aprendiendo y contribuir al desarrollo de soluciones de calidad.
+                </p>
+
+                <div class="hero__cta">
+                    <a href="#contacto" class="btn btn--primary">
+                        <span data-i18n="hero.cta_primary">Hablemos</span>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </a>
+                    <a href="#proyectos" class="btn btn--secondary" data-i18n="hero.cta_secondary">
+                        Ver proyectos
+                    </a>
+                </div>
+
+                <div class="hero__social">
+                    <a href="https://github.com/perezadria28" target="_blank" rel="noopener" class="social__link"
+                        aria-label="GitHub">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                        </svg>
+                    </a>
+                    <a href="https://linkedin.com/in/adriaperez" target="_blank" rel="noopener" class="social__link"
+                        aria-label="LinkedIn">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                        </svg>
+                    </a>
+                    <a href="mailto:adria.perez@email.com" class="social__link" aria-label="Email">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                            </path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero__visual">
+                <div class="visual__shape visual__shape--1"></div>
+                <div class="visual__shape visual__shape--2"></div>
+                <div class="visual__shape visual__shape--3"></div>
+            </div>
+        </div>
+
+        <div class="scroll-indicator">
+            <span class="scroll-text" data-i18n="hero.scroll">Scroll</span>
+            <span class="scroll-arrow"></span>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section projects" id="proyectos">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__title" data-i18n="projects.title">
+                    Proyectos destacados
+                </h2>
+                <p class="section__subtitle" data-i18n="projects.subtitle">
+                    Algunos trabajos que demuestran mi pasión por el código limpio y el diseño funcional
+                </p>
+            </div>
+
+            <div class="projects__grid">
+                <article class="project-card">
+                    <div class="project-card__image">
+                        <img src="pomodoro-screenshot.png" alt="Pomodoro Timer" class="project-card__img">
+                    </div>
+                    <div class="project-card__content">
+                        <h3 class="project-card__title" data-i18n="projects.pomodoro.title">Pomodoro Timer</h3>
+                        <p class="project-card__description" data-i18n="projects.pomodoro.description">
+                            Temporizador Pomodoro minimalista para organizar el trabajo y aumentar la productividad.
+                        </p>
+                        <div class="project-card__tech">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                        <div class="project-card__links">
+                            <a href="https://github.com/perezadria28/pomodoro-timer" target="_blank" rel="noopener"
+                                class="project-link">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                                </svg>
+                                <span data-i18n="projects.links.code">Código</span>
+                            </a>
+                            <a href="https://perezadria28.github.io/pomodoro-timer/" target="_blank" rel="noopener"
+                                class="project-link">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                                <span data-i18n="projects.links.demo">Demo</span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-card__image">
+                        <img src="diabetes-screenshot.png" alt="Diabetes Control App" class="project-card__img">
+                    </div>
+                    <div class="project-card__content">
+                        <h3 class="project-card__title" data-i18n="projects.diabetes.title">Diabetes Control App</h3>
+                        <p class="project-card__description" data-i18n="projects.diabetes.description">
+                            Herramienta para registrar y visualizar información clave en el control de la diabetes.
+                        </p>
+                        <div class="project-card__tech">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">Typescript</span>
+                            <span class="tech-tag">Angular</span>
+                            <span class="tech-tag">Java</span>
+                            <span class="tech-tag">Spring Boot</span>
+                            <span class="tech-tag">MySQL</span>
+                        </div>
+                        <div class="project-card__links">
+                            <a href="https://github.com/perezadria28/diabetes-control-app" target="_blank"
+                                rel="noopener" class="project-link">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                                </svg>
+                                <span data-i18n="projects.links.code">Código</span>
+                            </a>
+                            <span class="project-card__info" data-i18n="projects.diabetes.status">
+                                Proyecto en desarrollo
+                            </span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="sobre-mi">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__title" data-i18n="about.title">
+                    Sobre mí
+                </h2>
+            </div>
+
+            <div class="about__content">
+                <div class="about__text">
+                    <p class="about__paragraph" data-i18n="about.paragraph1">
+                        Desarrollador fullstack junior con conocimientos en <strong>Java, Spring Boot y Angular.</strong>
+                    </p>
+
+                    <p class="about__paragraph" data-i18n="about.paragraph2">
+                        Graduado en <strong> Desarrollo de Aplicaciones Web </strong> con
+                        experiencia previa en el <em> sector sanitario</em>.
+                        Busco mi primera oportunidad profesional en un equipo técnico donde aplicar mis conocimientos,
+                        seguir aprendiendo y contribuir.
+                    </p>
+
+                    <p class="about__paragraph" data-i18n="about.paragraph3">
+                        Cuando no estoy programando, me encontrarás aprendiendo <em> nuevas tecnologías </em>,
+                        colaborando en proyectos open source o compartiendo conocimiento con la
+                        comunidad de desarrolladores.
+                    </p>
+
+                    <blockquote class="about__quote">
+                        <span data-i18n="about.quote">"El código es como el humor. Cuando tienes que explicarlo, es malo."</span>
+                        <cite data-i18n="about.quote_author">— Cory House</cite>
+                    </blockquote>
+
+                    <div class="about__highlights">
+                        <div class="highlight-card">
+                            <div class="highlight-card__icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <polyline points="16 18 22 12 16 6"></polyline>
+                                    <polyline points="8 6 2 12 8 18"></polyline>
+                                </svg>
+                            </div>
+                            <div class="highlight-card__content">
+                                <h3 class="highlight-card__title" data-i18n="about.highlights.clean_code.title">Clean Code</h3>
+                                <p class="highlight-card__text" data-i18n="about.highlights.clean_code.text">Código limpio, testeable y mantenible</p>
+                            </div>
+                        </div>
+
+                        <div class="highlight-card">
+                            <div class="highlight-card__icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                                </svg>
+                            </div>
+                            <div class="highlight-card__content">
+                                <h3 class="highlight-card__title" data-i18n="about.highlights.learning.title">Lifelong Learning</h3>
+                                <p class="highlight-card__text" data-i18n="about.highlights.learning.text">Aprendizaje continuo en el desarrollo de software</p>
+                            </div>
+                        </div>
+
+                        <div class="highlight-card">
+                            <div class="highlight-card__icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                    <circle cx="9" cy="7" r="4"></circle>
+                                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                                </svg>
+                            </div>
+                            <div class="highlight-card__content">
+                                <h3 class="highlight-card__title" data-i18n="about.highlights.collaboration.title">Team Collaboration</h3>
+                                <p class="highlight-card__text" data-i18n="about.highlights.collaboration.text">Colaboración activa y trabajo en equipo</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about__visual">
+                    <div class="about__image">
+                        <img src="foto_cv.jpg" alt="Adrià Pérez" class="about__image-photo">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technologies Section -->
+    <section class="section technologies" id="tecnologias">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__title" data-i18n="technologies.title">
+                    Tecnologías
+                </h2>
+                <p class="section__subtitle" data-i18n="technologies.subtitle">
+                    Las herramientas que uso para dar vida a las ideas
+                </p>
+            </div>
+
+            <div class="tech__categories">
+                <div class="tech__category">
+                    <h3 class="tech__category-title">
+                        <span class="tech__category-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <polyline points="16 18 22 12 16 6"></polyline>
+                                <polyline points="8 6 2 12 8 18"></polyline>
+                            </svg>
+                        </span>
+                        <span data-i18n="technologies.frontend">Frontend</span>
+                    </h3>
+                    <div class="tech__grid">
+                        <div class="tech-item">
+                            <div class="tech-item__icon"><i class="devicon-html5-plain"></i></div>
+                            <span class="tech-item__name">HTML5</span>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-item__icon"><i class="devicon-css3-plain"></i></div>
+                            <span class="tech-item__name">CSS3</span>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-item__icon"><i class="devicon-typescript-plain"></i></div>
+                            <span class="tech-item__name">TypeScript</span>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-item__icon"><i class="devicon-javascript-plain"></i></div>
+                            <span class="tech-item__name">JavaScript</span>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-item__icon"><i class="devicon-tailwindcss-original"></i></div>
+                            <span class="tech-item__name">Tailwind</span>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-item__icon"><i class="devicon-angular-plain"></i></div>
+                            <span class="tech-item__name">Angular</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tech__category">
+                    <h3 class="tech__category-title">
+                        <span class="tech__category-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+                                <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                                <line x1="6" y1="6" x2="6.01" y2="6"></line>
+                                <line x1="6" y1="18" x2="6.01" y2="18"></line>
+                            </svg>
+                        </span>
+                        <span data-i18n="technologies.backend">Backend</span>
+                    </h3>
+                    <div class="tech__grid">
+                        <div class="tech-item">
+                            <div class="tech-item__icon"><i class="devicon-java-plain"></i></div>
+                            <span class="tech-item__name">Java</span>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-item__icon"><i class="devicon-php-plain"></i></div>
+                            <span class="tech-item__name">PHP</span>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-item__icon"><i class="devicon-laravel-original"></i></div>
+                            <span class="tech-item__name">Laravel</span>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-item__icon"><i class="devicon-symfony-original"></i></div>
+                            <span class="tech-item__name">Symfony</span>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-item__icon"><i class="devicon-spring-original"></i></div>
+                            <span class="tech-item__name">Spring Boot</span>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-item__icon"><i class="devicon-hibernate-plain"></i></div>
+                            <span class="tech-item__name">Hibernate</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tech__category">
+                    <h3 class="tech__category-title">
+                        <span class="tech__category-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                                <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                                <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                            </svg>
+                        </span>
+                        <span data-i18n="technologies.databases">Databases & Tools</span>
+                    </h3>
+                    <div class="tech__grid">
+                        <div class="tech-item">
+                            <div class="tech-item__icon"><i class="devicon-mysql-original"></i></div>
+                            <span class="tech-item__name">MySQL</span>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-item__icon"><i class="devicon-postgresql-plain"></i></div>
+                            <span class="tech-item__name">PostgreSQL</span>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-item__icon"><i class="devicon-git-plain"></i></div>
+                            <span class="tech-item__name">Git</span>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-item__icon"><i class="devicon-github-original"></i></div>
+                            <span class="tech-item__name">GitHub</span>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-item__icon"><i class="devicon-postman-plain"></i></div>
+                            <span class="tech-item__name">Postman</span>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-item__icon"><i class="devicon-doctrine-plain"></i></div>
+                            <span class="tech-item__name">Doctrine</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contacto">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__title" data-i18n="contact.title">
+                    ¿Hablamos?
+                </h2>
+                <p class="section__subtitle" data-i18n="contact.subtitle">
+                    Estoy disponible para nuevos proyectos y colaboraciones
+                </p>
+            </div>
+
+            <div class="contact__content">
+                <div class="contact__info">
+                    <h3 class="contact__info-title" data-i18n="contact.info_title">Trabajemos juntos</h3>
+                    <p class="contact__info-text" data-i18n="contact.info_text">
+                        Si estás buscando un desarrollador comprometido, apasionado y con ganas de
+                        crear productos increíbles, <strong>me encantaría conocer tu proyecto</strong>.
+                    </p>
+
+                    <div class="contact__methods">
+                        <a href="mailto:perezadria00@gmail.com" class="contact-method">
+                            <div class="contact-method__icon">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path
+                                        d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                                    </path>
+                                    <polyline points="22,6 12,13 2,6"></polyline>
+                                </svg>
+                            </div>
+                            <div class="contact-method__content">
+                                <span class="contact-method__label" data-i18n="contact.methods.email">Email</span>
+                                <span class="contact-method__value">perezadria00@gmail.com</span>
+                            </div>
+                        </a>
+
+                        <a href="tel:+34608337960" class="contact-method">
+                            <div class="contact-method__icon">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path
+                                        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <div class="contact-method__content">
+                                <span class="contact-method__label" data-i18n="contact.methods.phone">Teléfono</span>
+                                <span class="contact-method__value">+34 608 33 79 60</span>
+                            </div>
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/perezadria00/" target="_blank" rel="noopener"
+                            class="contact-method">
+                            <div class="contact-method__icon">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                                </svg>
+                            </div>
+                            <div class="contact-method__content">
+                                <span class="contact-method__label" data-i18n="contact.methods.linkedin">LinkedIn</span>
+                                <span class="contact-method__value">perezadria00</span>
+                            </div>
+                        </a>
+
+                        <a href="https://github.com/perezadria28" target="_blank" rel="noopener" class="contact-method">
+                            <div class="contact-method__icon">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                                </svg>
+                            </div>
+                            <div class="contact-method__content">
+                                <span class="contact-method__label" data-i18n="contact.methods.github">GitHub</span>
+                                <span class="contact-method__value">perezadria28</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contact__cta">
+                    <div class="cta-card">
+                        <div class="cta-card__icon">
+                            <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5">
+                                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="cta-card__title" data-i18n="contact.cta.title">¿Listo para empezar?</h3>
+                        <p class="cta-card__text" data-i18n="contact.cta.text">
+                            Envíame un mensaje y charlemos sobre cómo puedo ayudarte.
+                        </p>
+                        <a href="mailto:perezadria00@gmail.com" class="btn btn--primary btn--large">
+                            <span data-i18n="contact.cta.button">Enviar mensaje</span>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__info">
+                    <p class="footer__text" data-i18n="footer.designed">
+                        Diseñado y desarrollado por Adrià Pérez
+                    </p>
+                    <p class="footer__copyright" data-i18n="footer.copyright">
+                        © 2025 Todos los derechos reservados
+                    </p>
+                </div>
+
+                <div class="footer__links">
+                    <a href="#proyectos" class="footer__link" data-i18n="nav.projects">Proyectos</a>
+                    <a href="#sobre-mi" class="footer__link" data-i18n="nav.about">Sobre mí</a>
+                    <a href="#tecnologias" class="footer__link" data-i18n="nav.technologies">Tecnologías</a>
+                    <a href="#contacto" class="footer__link" data-i18n="nav.contact">Contacto</a>
+                </div>
+
+                <div class="footer__social">
+                    <a href="https://github.com/perezadria28" target="_blank" rel="noopener" class="footer__social-link"
+                        aria-label="GitHub">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                        </svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/perezadria00/" target="_blank" rel="noopener"
+                        class="footer__social-link" aria-label="LinkedIn">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                        </svg>
+                    </a>
+                    <a href="mailto:perezadria00@gmail.com" class="footer__social-link" aria-label="Gmail">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                            </path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="i18n.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
