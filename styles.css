@@ -1434,11 +1434,11 @@ body {
 .tech__categories {
     display: grid;
     grid-template-columns: 1fr;
-    gap: var(--spacing-lg);
+    gap: var(--spacing-2xl);
 }
 
 .tech__category {
-    padding: var(--spacing-md);
+    padding: var(--spacing-lg);
     background: var(--color-surface);
     border: 1px solid var(--color-border-light);
     border-radius: var(--radius-lg);
