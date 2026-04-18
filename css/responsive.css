@@ -1,0 +1,35 @@
+/* Mobile Extra Small: 480px and below */
+@media (max-width: 479px) {
+    :root {
+        --container-padding: 1rem;
+    }
+}
+
+/* Mobile Small: 640px and below */
+@media (max-width: 639px) {
+    :root {
+        --container-padding: 1rem;
+    }
+}
+
+/* Mobile: 768px and below */
+@media (max-width: 767px) {
+    html {
+        scroll-padding-top: calc(var(--header-height) + 2rem);
+    }
+}
+
+/* Tablet and Desktop: 768px and above */
+@media (min-width: 768px) {
+    :root {
+        --container-padding: 2rem;
+        --header-height: 80px;
+    }
+}
+
+/* Large Desktop: 1024px and above */
+@media (min-width: 1024px) {
+    :root {
+        --container-padding: 3rem;
+    }
+}

@@ -1,0 +1,14 @@
+@import 'variables.css';
+@import 'reset.css';
+@import 'header.css';
+@import 'hero.css';
+@import 'buttons.css';
+@import 'sections.css';
+@import 'projects.css';
+@import 'about.css';
+@import 'tech.css';
+@import 'contact.css';
+@import 'ai.css';
+@import 'footer.css';
+@import 'accessibility.css';
+@import 'responsive.css';
