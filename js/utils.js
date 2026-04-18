@@ -47,6 +47,6 @@ export function initUtils() {
     });
 
     console.log('%c👋 Hola, ', 'font-size: 20px; font-weight: bold; color: #0066ff;');
-    console.log('%cEste es mi correo: perezadria00@gmail.com', 'font-size: 14px; color: #00d4aa;');
+    console.log('%cEste es mi correo: perez00adria@gmail.com', 'font-size: 14px; color: #00d4aa;');
     console.log('%c¡Gracias por visitar mi web!', 'font-size: 20px; font-weight: bold; color: #0066ff;');
 }
