@@ -2451,10 +2451,6 @@ button:focus-visible {
     .nav__actions {
         display: none;
     }
-
-    .nav__toggle {
-        display: flex;
-    }
 }
 
 /* Tablet and Desktop: 768px and above */
