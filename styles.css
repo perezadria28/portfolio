@@ -389,6 +389,14 @@ body {
 
 .hero__content {
     animation: fadeInUp 0.8s ease-out;
+    max-width: 100%;
+}
+
+@media (max-width: 767px) {
+    .hero__content {
+        max-width: 95%;
+        margin: 0 auto;
+    }
 }
 
 @keyframes fadeInUp {
