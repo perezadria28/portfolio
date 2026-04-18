@@ -1478,21 +1478,8 @@ body {
 
 .tech__grid {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
     gap: var(--spacing-md);
-}
-
-@media (min-width: 768px) {
-    .tech__grid {
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
-
-@media (min-width: 1024px) {
-    .tech__grid {
-        grid-template-columns: repeat(4, 1fr);
-        gap: var(--spacing-lg);
-    }
 }
 
 .tech-item {
@@ -2490,6 +2477,10 @@ button:focus-visible {
         grid-template-columns: 1fr;
     }
 
+    .tech__grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
     .contact__content {
         grid-template-columns: 1.2fr 1fr;
     }
@@ -2518,6 +2509,11 @@ button:focus-visible {
     .projects__grid {
         grid-template-columns: repeat(3, 1fr);
         gap: var(--spacing-xl);
+    }
+
+    .tech__grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: var(--spacing-lg);
     }
 
     .ai__grid {
