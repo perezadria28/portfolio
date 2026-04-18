@@ -42,13 +42,13 @@
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
                     <li class="nav__item">
-                        <a href="#proyectos" class="nav__link">
-                            <span data-i18n="nav.projects">Proyectos</span>
+                        <a href="#sobre-mi" class="nav__link">
+                            <span data-i18n="nav.about">Sobre mí</span>
                         </a>
                     </li>
                     <li class="nav__item">
-                        <a href="#sobre-mi" class="nav__link">
-                            <span data-i18n="nav.about">Sobre mí</span>
+                        <a href="#proyectos" class="nav__link">
+                            <span data-i18n="nav.projects">Proyectos</span>
                         </a>
                     </li>
                     <li class="nav__item">
@@ -193,6 +193,95 @@
         </div>
     </section>
 
+    <section class="section about" id="sobre-mi">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__title" data-i18n="about.title">
+                    Sobre mí
+                </h2>
+            </div>
+
+            <div class="about__content">
+                <div class="about__text">
+                    <p class="about__paragraph" data-i18n="about.paragraph1">
+                        Desarrollador fullstack junior con conocimientos en <strong>Java, Spring Boot y Angular.</strong>
+                    </p>
+
+                    <p class="about__paragraph" data-i18n="about.paragraph2">
+                        Graduado en <strong> Desarrollo de Aplicaciones Web </strong>.
+                        Busco oportunidades profesionales donde aplicar mis conocimientos,
+                        seguir aprendiendo y contribuir al desarrollo de proyectos.
+                    </p>
+
+                    <p class="about__paragraph" data-i18n="about.paragraph3">
+                        Cuando no estoy programando, me encontrarás aprendiendo <em> nuevas tecnologías </em> o compartiendo conocimiento con la
+                        comunidad de desarrolladores.
+                    </p>
+
+                    <blockquote class="about__quote">
+                        <span data-i18n="about.quote">"El código es como el humor. Cuando tienes que explicarlo, es malo."</span>
+                        <cite data-i18n="about.quote_author">— Cory House</cite>
+                    </blockquote>
+
+                    <div class="about__highlights">
+                        <div class="highlight-card" data-aos="zoom-in" data-aos-delay="100">
+                            <div class="highlight-card__icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <polyline points="16 18 22 12 16 6"></polyline>
+                                    <polyline points="8 6 2 12 8 18"></polyline>
+                                </svg>
+                            </div>
+                            <div class="highlight-card__content">
+                                <h3 class="highlight-card__title" data-i18n="about.highlights.clean_code.title">Clean Code</h3>
+                                <p class="highlight-card__text" data-i18n="about.highlights.clean_code.text">Código limpio, testeable y mantenible</p>
+                            </div>
+                        </div>
+
+                        <div class="highlight-card" data-aos="zoom-in" data-aos-delay="200">
+                            <div class="highlight-card__icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                                </svg>
+                            </div>
+                            <div class="highlight-card__content">
+                                <h3 class="highlight-card__title" data-i18n="about.highlights.learning.title">Lifelong Learning</h3>
+                                <p class="highlight-card__text" data-i18n="about.highlights.learning.text">Aprendizaje continuo en el desarrollo de software</p>
+                            </div>
+                        </div>
+
+                        <div class="highlight-card" data-aos="zoom-in" data-aos-delay="300">
+                            <div class="highlight-card__icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                    <circle cx="9" cy="7" r="4"></circle>
+                                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                                </svg>
+                            </div>
+                            <div class="highlight-card__content">
+                                <h3 class="highlight-card__title" data-i18n="about.highlights.collaboration.title">Team Collaboration</h3>
+                                <p class="highlight-card__text" data-i18n="about.highlights.collaboration.text">Colaboración activa y trabajo en equipo</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about__visual">
+                    <div class="about__image">
+                        <picture>
+                          <source srcset="foto_cv.webp" type="image/webp">
+                          <img src="foto_cv.jpg" alt="Adrià Pérez" class="about__image-photo" width="220" height="220" loading="lazy">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section class="section projects" id="proyectos">
         <div class="container">
             <div class="section__header">
@@ -288,95 +377,6 @@
                         </div>
                     </div>
                 </article>
-            </div>
-        </div>
-    </section>
-
-    <section class="section about" id="sobre-mi">
-        <div class="container">
-            <div class="section__header">
-                <h2 class="section__title" data-i18n="about.title">
-                    Sobre mí
-                </h2>
-            </div>
-
-            <div class="about__content">
-                <div class="about__text">
-                    <p class="about__paragraph" data-i18n="about.paragraph1">
-                        Desarrollador fullstack junior con conocimientos en <strong>Java, Spring Boot y Angular.</strong>
-                    </p>
-
-                    <p class="about__paragraph" data-i18n="about.paragraph2">
-                        Graduado en <strong> Desarrollo de Aplicaciones Web </strong>.
-                        Busco oportunidades profesionales donde aplicar mis conocimientos,
-                        seguir aprendiendo y contribuir al desarrollo de proyectos.
-                    </p>
-
-                    <p class="about__paragraph" data-i18n="about.paragraph3">
-                        Cuando no estoy programando, me encontrarás aprendiendo <em> nuevas tecnologías </em> o compartiendo conocimiento con la
-                        comunidad de desarrolladores.
-                    </p>
-
-                    <blockquote class="about__quote">
-                        <span data-i18n="about.quote">"El código es como el humor. Cuando tienes que explicarlo, es malo."</span>
-                        <cite data-i18n="about.quote_author">— Cory House</cite>
-                    </blockquote>
-
-                    <div class="about__highlights">
-                        <div class="highlight-card" data-aos="zoom-in" data-aos-delay="100">
-                            <div class="highlight-card__icon">
-                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                    stroke-width="2">
-                                    <polyline points="16 18 22 12 16 6"></polyline>
-                                    <polyline points="8 6 2 12 8 18"></polyline>
-                                </svg>
-                            </div>
-                            <div class="highlight-card__content">
-                                <h3 class="highlight-card__title" data-i18n="about.highlights.clean_code.title">Clean Code</h3>
-                                <p class="highlight-card__text" data-i18n="about.highlights.clean_code.text">Código limpio, testeable y mantenible</p>
-                            </div>
-                        </div>
-
-                        <div class="highlight-card" data-aos="zoom-in" data-aos-delay="200">
-                            <div class="highlight-card__icon">
-                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                    stroke-width="2">
-                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
-                                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
-                                </svg>
-                            </div>
-                            <div class="highlight-card__content">
-                                <h3 class="highlight-card__title" data-i18n="about.highlights.learning.title">Lifelong Learning</h3>
-                                <p class="highlight-card__text" data-i18n="about.highlights.learning.text">Aprendizaje continuo en el desarrollo de software</p>
-                            </div>
-                        </div>
-
-                        <div class="highlight-card" data-aos="zoom-in" data-aos-delay="300">
-                            <div class="highlight-card__icon">
-                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                    stroke-width="2">
-                                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-                                    <circle cx="9" cy="7" r="4"></circle>
-                                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
-                                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
-                                </svg>
-                            </div>
-                            <div class="highlight-card__content">
-                                <h3 class="highlight-card__title" data-i18n="about.highlights.collaboration.title">Team Collaboration</h3>
-                                <p class="highlight-card__text" data-i18n="about.highlights.collaboration.text">Colaboración activa y trabajo en equipo</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="about__visual">
-                    <div class="about__image">
-                        <picture>
-                          <source srcset="foto_cv.webp" type="image/webp">
-                          <img src="foto_cv.jpg" alt="Adrià Pérez" class="about__image-photo" width="220" height="220" loading="lazy">
-                        </picture>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
