@@ -85,7 +85,7 @@
     justify-content: center;
     width: 40px;
     height: 40px;
-    color: #4A4A4A;
+    color: #1A0E2E;
     background: #F5F2FF;
     border-radius: var(--radius-md);
     text-decoration: none;
@@ -93,8 +93,8 @@
 }
 
 .footer__social-link:hover {
-    color: #3F0055;
-    background: #EBE5FF;
+    color: #1A0E2E;
+    background: #E0AAFF;
     transform: translateY(-4px);
 }
 
