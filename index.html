@@ -17,7 +17,6 @@
     <noscript><link
         href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap"
         rel="stylesheet"></noscript>
-    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
     <link rel="preload" as="style" href="https://unpkg.com/aos@next/dist/aos.css"
         onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"></noscript>
@@ -29,7 +28,10 @@
         <nav class="nav container">
             <div class="nav__brand">
                 <a href="#" class="nav__logo">
-                    <img src="foto_cv.jpg" alt="Adrià Pérez" class="nav__logo-img">
+                    <picture>
+                      <source srcset="foto_cv.webp" type="image/webp">
+                      <img src="foto_cv.jpg" alt="Adrià Pérez" class="nav__logo-img" width="40" height="40" fetchpriority="high">
+                    </picture>
                     <span class="logo-pulse"></span>
                 </a>
                 <div class="nav__badge">
@@ -206,7 +208,10 @@
             <div class="projects__grid">
                 <article class="project-card" data-aos="fade-up" data-aos-delay="100">
                     <div class="project-card__image">
-                        <img src="pomodoro-screenshot.png" alt="Pomodoro Timer" class="project-card__img">
+                        <picture>
+                          <source srcset="pomodoro-screenshot.webp" type="image/webp">
+                          <img src="pomodoro-screenshot.png" alt="Pomodoro Timer" class="project-card__img" width="1876" height="857" loading="lazy">
+                        </picture>
                     </div>
                     <div class="project-card__content">
                         <h3 class="project-card__title" data-i18n="projects.pomodoro.title">Pomodoro Timer</h3>
@@ -243,7 +248,10 @@
 
                 <article class="project-card" data-aos="fade-up" data-aos-delay="200">
                     <div class="project-card__image">
-                        <img src="diabetes-screenshot.png" alt="Diabetes Control App" class="project-card__img">
+                        <picture>
+                          <source srcset="diabetes-screenshot.webp" type="image/webp">
+                          <img src="diabetes-screenshot.png" alt="Diabetes Control App" class="project-card__img" width="1329" height="392" loading="lazy">
+                        </picture>
                     </div>
                     <div class="project-card__content">
                         <h3 class="project-card__title" data-i18n="projects.diabetes.title">Diabetes Control App</h3>
@@ -364,7 +372,10 @@
 
                 <div class="about__visual">
                     <div class="about__image">
-                        <img src="foto_cv.jpg" alt="Adrià Pérez" class="about__image-photo">
+                        <picture>
+                          <source srcset="foto_cv.webp" type="image/webp">
+                          <img src="foto_cv.jpg" alt="Adrià Pérez" class="about__image-photo" width="220" height="220" loading="lazy">
+                        </picture>
                     </div>
                 </div>
             </div>
@@ -436,27 +447,27 @@
                     <h3 class="tech-card__name">MySQL</h3>
                 </div>
                 <div class="tech-card" data-aos="zoom-in" data-aos-delay="700">
-                    <div class="tech-card__icon"><i class="devicon-postgresql-plain"></i></div>
+                    <div class="tech-card__icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-plain.svg" alt="" width="40" height="40" loading="lazy"></div>
                     <h3 class="tech-card__name">PostgreSQL</h3>
                 </div>
                 <div class="tech-card" data-aos="zoom-in" data-aos-delay="750">
-                    <div class="tech-card__icon"><i class="devicon-git-plain"></i></div>
+                    <div class="tech-card__icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-plain.svg" alt="" width="40" height="40" loading="lazy"></div>
                     <h3 class="tech-card__name">Git</h3>
                 </div>
                 <div class="tech-card" data-aos="zoom-in" data-aos-delay="800">
-                    <div class="tech-card__icon"><i class="devicon-github-original"></i></div>
+                    <div class="tech-card__icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" alt="" width="40" height="40" loading="lazy"></div>
                     <h3 class="tech-card__name">GitHub</h3>
                 </div>
                 <div class="tech-card" data-aos="zoom-in" data-aos-delay="850">
-                    <div class="tech-card__icon"><i class="devicon-postman-plain"></i></div>
+                    <div class="tech-card__icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-plain.svg" alt="" width="40" height="40" loading="lazy"></div>
                     <h3 class="tech-card__name">Postman</h3>
                 </div>
                 <div class="tech-card" data-aos="zoom-in" data-aos-delay="900">
-                    <div class="tech-card__icon"><i class="devicon-doctrine-plain"></i></div>
+                    <div class="tech-card__icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/doctrine/doctrine-plain.svg" alt="" width="40" height="40" loading="lazy"></div>
                     <h3 class="tech-card__name">Doctrine</h3>
                 </div>
                 <div class="tech-card" data-aos="zoom-in" data-aos-delay="950">
-                    <div class="tech-card__icon"><i class="devicon-react-original"></i></div>
+                    <div class="tech-card__icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" alt="" width="40" height="40" loading="lazy"></div>
                     <h3 class="tech-card__name">React</h3>
                 </div>
             </div>
