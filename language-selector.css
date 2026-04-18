@@ -52,13 +52,9 @@
 
 
 @media (max-width: 767px) {
-    .language-selector {
-        order: -1;
-        margin-right: auto;
-    }
-    
-    .nav__actions {
-        flex-wrap: wrap;
+    .nav__menu-controls .language-selector {
+        order: unset;
+        margin-right: 0;
     }
 }
 
