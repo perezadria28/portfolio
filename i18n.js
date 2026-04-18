@@ -11,7 +11,7 @@ const translations = {
       "greeting": "Hola, soy",
       "name": "Adrià Pérez",
       "subtitle": "Full Stack Developer",
-      "description": "Busco mi primera oportunidad profesional en un equipo técnico donde aplicar mis conocimientos, seguir aprendiendo y contribuir al desarrollo de soluciones de calidad.",
+      "description": "Full Stack Developer apasionado por crear soluciones de calidad. Siempre buscando nuevos retos donde aplicar mis conocimientos y seguir aprendiendo.",
       "cta_primary": "Hablemos",
       "cta_secondary": "Ver proyectos",
       "scroll": "Scroll"
@@ -36,7 +36,7 @@ const translations = {
     "about": {
       "title": "Sobre mí",
       "paragraph1": "Desarrollador fullstack junior con conocimientos en <strong>Java, Spring Boot y Angular.</strong>",
-      "paragraph2": "Graduado en <strong> Desarrollo de Aplicaciones Web </strong> con experiencia previa en el <em> sector sanitario</em>. Busco mi primera oportunidad profesional en un equipo técnico donde aplicar mis conocimientos, seguir aprendiendo y contribuir.",
+      "paragraph2": "Graduado en <strong> Desarrollo de Aplicaciones Web </strong> con experiencia previa en el <em> sector sanitario</em>. Busco oportunidades profesionales donde aplicar mis conocimientos, seguir aprendiendo y contribuir al desarrollo de proyectos.",
       "paragraph3": "Cuando no estoy programando, me encontrarás aprendiendo <em> nuevas tecnologías </em>, colaborando en proyectos open source o compartiendo conocimiento con la comunidad de desarrolladores.",
       "quote": "El código es como el humor. Cuando tienes que explicarlo, es malo.",
       "quote_author": "— Cory House",
@@ -96,7 +96,7 @@ const translations = {
       "greeting": "Hi, I'm",
       "name": "Adrià Pérez",
       "subtitle": "Full Stack Developer",
-      "description": "I'm looking for my first professional opportunity in a technical team where I can apply my knowledge, keep learning, and contribute to developing quality solutions.",
+      "description": "Passionate Full Stack Developer creating quality solutions. Always seeking new challenges to apply my knowledge and continue learning.",
       "cta_primary": "Let's talk",
       "cta_secondary": "View projects",
       "scroll": "Scroll"
@@ -121,7 +121,7 @@ const translations = {
     "about": {
       "title": "About Me",
       "paragraph1": "Junior fullstack developer with knowledge in <strong>Java, Spring Boot, and Angular.</strong>",
-      "paragraph2": "Graduate in <strong>Web Application Development</strong> with previous experience in the <em>healthcare sector</em>. I'm looking for my first professional opportunity in a technical team where I can apply my knowledge, keep learning, and contribute.",
+      "paragraph2": "Graduate in <strong>Web Application Development</strong> with previous experience in the <em>healthcare sector</em>. I'm seeking professional opportunities to apply my knowledge, continue learning, and contribute to project development.",
       "paragraph3": "When I'm not coding, you'll find me learning <em>new technologies</em>, collaborating on open source projects, or sharing knowledge with the developer community.",
       "quote": "Code is like humor. When you have to explain it, it's bad.",
       "quote_author": "— Cory House",
@@ -181,7 +181,7 @@ const translations = {
       "greeting": "Hola, sóc",
       "name": "Adrià Pérez",
       "subtitle": "Full Stack Developer",
-      "description": "Busco la meua primera oportunitat professional en un equip tècnic on aplicar els meus coneixements, seguir aprenent i contribuir al desenvolupament de solucions de qualitat.",
+      "description": "Full Stack Developer apassionat per crear solucions de qualitat. Sempre buscant nous reptes on aplicar els meus coneixements i seguir aprenent.",
       "cta_primary": "Parlem",
       "cta_secondary": "Veure projectes",
       "scroll": "Desplaça"
@@ -206,7 +206,7 @@ const translations = {
     "about": {
       "title": "Sobre mi",
       "paragraph1": "Desenvolupador fullstack junior amb coneixements en <strong>Java, Spring Boot i Angular.</strong>",
-      "paragraph2": "Graduat en <strong>Desenvolupament d'Aplicacions Web</strong> amb experiència prèvia en el <em>sector sanitari</em>. Busco la meua primera oportunitat professional en un equip tècnic on aplicar els meus coneixements, seguir aprenent i contribuir.",
+      "paragraph2": "Graduat en <strong>Desenvolupament d'Aplicacions Web</strong> amb experiència prèvia en el <em>sector sanitari</em>. Busco oportunitats professionals on aplicar els meus coneixements, seguir aprenent i contribuir al desenvolupament de projectes.",
       "paragraph3": "Quan no estic programant, em trobaràs aprenent <em>noves tecnologies</em>, col·laborant en projectes open source o compartint coneixement amb la comunitat de desenvolupadors.",
       "quote": "El codi és com l'humor. Quan has d'explicar-lo, és dolent.",
       "quote_author": "— Cory House",

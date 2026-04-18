@@ -1,3 +1,9 @@
+AOS.init({
+    duration: 800,
+    easing: 'ease-out-cubic',
+    once: false,
+    offset: 100
+});
 
 const themeToggle = document.getElementById('theme-toggle');
 const html = document.documentElement;
@@ -225,11 +231,60 @@ projectCards.forEach(card => {
         const rect = card.getBoundingClientRect();
         const x = e.clientX - rect.left;
         const y = e.clientY - rect.top;
-        
+
         card.style.setProperty('--mouse-x', `${x}px`);
         card.style.setProperty('--mouse-y', `${y}px`);
+        card.style.setProperty('--scale', '1.02');
+    });
+
+    card.addEventListener('mouseleave', () => {
+        card.style.setProperty('--scale', '1');
     });
 });
+
+const buttons = document.querySelectorAll('.btn');
+buttons.forEach(button => {
+    button.addEventListener('click', (e) => {
+        const ripple = document.createElement('span');
+        const rect = button.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+        const size = Math.max(rect.width, rect.height);
+
+        ripple.style.cssText = `
+            position: absolute;
+            width: ${size}px;
+            height: ${size}px;
+            background: rgba(255, 255, 255, 0.5);
+            border-radius: 50%;
+            left: ${x - size / 2}px;
+            top: ${y - size / 2}px;
+            pointer-events: none;
+            animation: ripple 0.6s ease-out;
+        `;
+
+        button.style.position = 'relative';
+        button.style.overflow = 'hidden';
+        button.appendChild(ripple);
+
+        setTimeout(() => ripple.remove(), 600);
+    });
+});
+
+const style = document.createElement('style');
+style.textContent = `
+    @keyframes ripple {
+        from {
+            transform: scale(0);
+            opacity: 1;
+        }
+        to {
+            transform: scale(1);
+            opacity: 0;
+        }
+    }
+`;
+document.head.appendChild(style);
 
 
 console.log('%c👋 Hola, ', 'font-size: 20px; font-weight: bold; color: #0066ff;');
