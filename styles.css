@@ -1438,7 +1438,7 @@ body {
 }
 
 .tech__category {
-    padding: var(--spacing-xl);
+    padding: var(--spacing-md);
     background: var(--color-surface);
     border: 1px solid var(--color-border-light);
     border-radius: var(--radius-lg);
@@ -1446,7 +1446,7 @@ body {
 
 @media (max-width: 639px) {
     .tech__category {
-        padding: var(--spacing-lg);
+        padding: var(--spacing-sm);
     }
 }
 
