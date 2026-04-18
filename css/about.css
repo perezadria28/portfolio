@@ -199,7 +199,7 @@
     padding: 3px;
     background: linear-gradient(135deg, #3F0055, #9D4EDD, #C77DFF, #E0AAFF, #9D4EDD, #3F0055);
     background-size: 300% 300%;
-    animation: gradient-border 4s ease infinite;
+    animation: gradient-border 4s ease infinite, levitate 3.5s ease-in-out infinite;
     box-shadow: 0 8px 32px rgba(63, 0, 85, 0.2);
 }
 
@@ -209,8 +209,30 @@
     100% { background-position: 0% 50%; }
 }
 
+@keyframes levitate {
+    0%, 100% {
+        transform: translateY(0);
+        box-shadow: 0 8px 32px rgba(63, 0, 85, 0.2);
+    }
+    50% {
+        transform: translateY(-14px);
+        box-shadow: 0 24px 48px rgba(63, 0, 85, 0.12);
+    }
+}
+
 [data-theme="dark"] .about__image {
-    box-shadow: 0 8px 32px rgba(224, 170, 255, 0.15);
+    animation: gradient-border 4s ease infinite, levitate-dark 3.5s ease-in-out infinite;
+}
+
+@keyframes levitate-dark {
+    0%, 100% {
+        transform: translateY(0);
+        box-shadow: 0 8px 32px rgba(224, 170, 255, 0.15);
+    }
+    50% {
+        transform: translateY(-14px);
+        box-shadow: 0 24px 48px rgba(224, 170, 255, 0.06);
+    }
 }
 
 .about__image-photo {
