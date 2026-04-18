@@ -372,16 +372,18 @@ body {
 
 .hero {
     position: relative;
-    min-height: 100vh;
+    height: 100vh;
     display: flex;
     align-items: center;
     padding-top: var(--header-height);
     overflow: hidden;
+    box-sizing: border-box;
 }
 
 @media (max-width: 639px) {
     .hero {
-        min-height: 80vh;
+        height: auto;
+        min-height: 100vh;
     }
 }
 
