@@ -83,6 +83,33 @@ const translations = {
           "title": "Machine Learning",
           "description": "Modelos predictivos y análisis de datos para automatización inteligente de procesos."
         }
+      },
+      "advanced": {
+        "subtitle": "Orquestación Avanzada de LLM",
+        "sdd": {
+          "title": "SDD",
+          "description": "Documentar decisiones arquitectónicas con Claude para claridad y mantenibilidad a largo plazo."
+        },
+        "agents": {
+          "title": "Sub-agentes",
+          "description": "Orquestar múltiples agentes especializados en paralelo para tareas complejas."
+        },
+        "skills": {
+          "title": "Skills Especializados",
+          "description": "Usar habilidades especializadas según contexto para máxima precisión y eficiencia."
+        },
+        "mcp": {
+          "title": "MCP",
+          "description": "Integrar Model Context Protocol para acceder a herramientas externas de forma segura."
+        },
+        "engram": {
+          "title": "Engram",
+          "description": "Memoria persistida para aprendizaje entre proyectos y sesiones de trabajo."
+        },
+        "iteration": {
+          "title": "Iteración LLM",
+          "description": "Retroalimentación entre agentes para mejora continua de resultados y procesos."
+        }
       }
     },
     "contact": {
@@ -191,6 +218,33 @@ const translations = {
           "title": "Machine Learning",
           "description": "Predictive models and data analysis for intelligent process automation."
         }
+      },
+      "advanced": {
+        "subtitle": "Advanced LLM Orchestration",
+        "sdd": {
+          "title": "SDD",
+          "description": "Document architectural decisions with Claude for clarity and long-term maintainability."
+        },
+        "agents": {
+          "title": "Sub-agents",
+          "description": "Orchestrate multiple specialized agents in parallel for complex tasks."
+        },
+        "skills": {
+          "title": "Specialized Skills",
+          "description": "Use specialized skills based on context for maximum precision and efficiency."
+        },
+        "mcp": {
+          "title": "MCP",
+          "description": "Integrate Model Context Protocol for secure access to external tools."
+        },
+        "engram": {
+          "title": "Engram",
+          "description": "Persistent memory for learning across projects and work sessions."
+        },
+        "iteration": {
+          "title": "LLM Iteration",
+          "description": "Feedback between agents for continuous improvement of results and processes."
+        }
       }
     },
     "contact": {
@@ -298,6 +352,33 @@ const translations = {
         "ml": {
           "title": "Machine Learning",
           "description": "Models predictius i anàlisi de dades per a automatització intel·ligent de processos."
+        }
+      },
+      "advanced": {
+        "subtitle": "Orquestració Avançada de LLM",
+        "sdd": {
+          "title": "SDD",
+          "description": "Documentar decisions arquitectòniques amb Claude per a claredat i mantenibilitat a llarg termini."
+        },
+        "agents": {
+          "title": "Sub-agents",
+          "description": "Orquestar múltiples agents especialitzats en paral·lel per a tasques complexes."
+        },
+        "skills": {
+          "title": "Skills Especialitzats",
+          "description": "Utilitzar habilitats especialitzades segons context per a màxima precisió i eficiència."
+        },
+        "mcp": {
+          "title": "MCP",
+          "description": "Integrar Model Context Protocol per accedir de forma segura a eines externes."
+        },
+        "engram": {
+          "title": "Engram",
+          "description": "Memòria persistida per aprenentatge entre projectes i sessions de treball."
+        },
+        "iteration": {
+          "title": "Iteració LLM",
+          "description": "Retroalimentació entre agents per a millora contínua de resultats i processos."
         }
       }
     },
