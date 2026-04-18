@@ -4,6 +4,7 @@ const translations = {
       "projects": "Proyectos",
       "about": "Sobre mí",
       "technologies": "Tecnologías",
+      "ai": "IA",
       "contact": "Contacto"
     },
     "hero": {
@@ -62,6 +63,28 @@ const translations = {
       "backend": "Backend",
       "databases": "Databases & Tools"
     },
+    "ai": {
+      "title": "IA en mis proyectos",
+      "subtitle": "Implementación de inteligencia artificial para optimizar y automatizar soluciones",
+      "cards": {
+        "assistants": {
+          "title": "Asistentes virtuales",
+          "description": "Chatbots y asistentes IA con Claude API para interacción natural y respuestas inteligentes."
+        },
+        "nlp": {
+          "title": "Procesamiento de lenguaje",
+          "description": "Análisis y procesamiento de texto con IA para extracción de información y clasificación."
+        },
+        "computer_vision": {
+          "title": "Visión por computadora",
+          "description": "Análisis y reconocimiento de imágenes con modelos de visión artificial avanzados."
+        },
+        "ml": {
+          "title": "Machine Learning",
+          "description": "Modelos predictivos y análisis de datos para automatización inteligente de procesos."
+        }
+      }
+    },
     "contact": {
       "title": "¿Hablamos?",
       "subtitle": "Estoy disponible para nuevos proyectos y colaboraciones",
@@ -89,6 +112,7 @@ const translations = {
       "projects": "Projects",
       "about": "About",
       "technologies": "Technologies",
+      "ai": "AI",
       "contact": "Contact"
     },
     "hero": {
@@ -147,6 +171,28 @@ const translations = {
       "backend": "Backend",
       "databases": "Databases & Tools"
     },
+    "ai": {
+      "title": "AI in my projects",
+      "subtitle": "Implementing artificial intelligence to optimize and automate solutions",
+      "cards": {
+        "assistants": {
+          "title": "Virtual Assistants",
+          "description": "AI chatbots and assistants with Claude API for natural interaction and intelligent responses."
+        },
+        "nlp": {
+          "title": "Language Processing",
+          "description": "Text analysis and processing with AI for information extraction and classification."
+        },
+        "computer_vision": {
+          "title": "Computer Vision",
+          "description": "Image analysis and recognition with advanced artificial vision models."
+        },
+        "ml": {
+          "title": "Machine Learning",
+          "description": "Predictive models and data analysis for intelligent process automation."
+        }
+      }
+    },
     "contact": {
       "title": "Let's Talk?",
       "subtitle": "I'm available for new projects and collaborations",
@@ -174,6 +220,7 @@ const translations = {
       "projects": "Projectes",
       "about": "Sobre mi",
       "technologies": "Tecnologies",
+      "ai": "IA",
       "contact": "Contacte"
     },
     "hero": {
@@ -231,6 +278,28 @@ const translations = {
       "frontend": "Frontend",
       "backend": "Backend",
       "databases": "Databases & Tools"
+    },
+    "ai": {
+      "title": "IA en els meus projectes",
+      "subtitle": "Implementació d'intel·ligència artificial per a optimitzar i automatitzar solucions",
+      "cards": {
+        "assistants": {
+          "title": "Assistents virtuals",
+          "description": "Xatbots i assistents IA amb Claude API per a interacció natural i respostes intel·ligents."
+        },
+        "nlp": {
+          "title": "Processament de llenguatge",
+          "description": "Anàlisi i processament de text amb IA per a extracció d'informació i classificació."
+        },
+        "computer_vision": {
+          "title": "Visió per computadora",
+          "description": "Anàlisi i reconeixement d'imatges amb models de visió artificial avançats."
+        },
+        "ml": {
+          "title": "Machine Learning",
+          "description": "Models predictius i anàlisi de dades per a automatització intel·ligent de processos."
+        }
+      }
     },
     "contact": {
       "title": "Parlem?",
