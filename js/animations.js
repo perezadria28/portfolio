@@ -2,16 +2,8 @@ export function initAnimations() {
     AOS.init({
         duration: 800,
         easing: 'ease-out-cubic',
-        once: false,
+        once: true,
         offset: 100
-    });
-
-    window.addEventListener('load', () => {
-        document.body.style.opacity = '0';
-        document.body.style.transition = 'opacity 0.3s ease-out';
-        requestAnimationFrame(() => {
-            document.body.style.opacity = '1';
-        });
     });
 
     const fadeElements = document.querySelectorAll(
