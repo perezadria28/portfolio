@@ -1491,19 +1491,20 @@ body {
 
 .tech__grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: var(--spacing-lg);
 }
 
 @media (max-width: 767px) {
     .tech__grid {
+        grid-template-columns: repeat(2, 1fr);
         gap: var(--spacing-md);
     }
 }
 
 @media (max-width: 639px) {
     .tech__grid {
-        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        grid-template-columns: repeat(3, 1fr);
         gap: var(--spacing-sm);
     }
 }
