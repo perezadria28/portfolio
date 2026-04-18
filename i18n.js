@@ -15,6 +15,7 @@ const translations = {
       "description": "Full Stack Developer apasionado por crear soluciones de calidad. Siempre buscando nuevos retos donde aplicar mis conocimientos y seguir aprendiendo.",
       "cta_primary": "Hablemos",
       "cta_secondary": "Ver proyectos",
+      "cta_tertiary": "Descargar CV",
       "scroll": "Scroll"
     },
     "projects": {
@@ -132,6 +133,7 @@ const translations = {
       "description": "Passionate Full Stack Developer creating quality solutions. Always seeking new challenges to apply my knowledge and continue learning.",
       "cta_primary": "Let's talk",
       "cta_secondary": "View projects",
+      "cta_tertiary": "Download CV",
       "scroll": "Scroll"
     },
     "projects": {
@@ -249,6 +251,7 @@ const translations = {
       "description": "Full Stack Developer apassionat per crear solucions de qualitat. Sempre buscant nous reptes on aplicar els meus coneixements i seguir aprenent.",
       "cta_primary": "Parlem",
       "cta_secondary": "Veure projectes",
+      "cta_tertiary": "Descarregar CV",
       "scroll": "Desplaça"
     },
     "projects": {
