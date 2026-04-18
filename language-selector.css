@@ -13,6 +13,7 @@
     align-items: center;
     justify-content: center;
     min-width: 36px;
+    min-height: 36px;
     height: 32px;
     padding: 0 0.5rem;
     border: none;
@@ -24,6 +25,14 @@
     border-radius: calc(var(--radius-md) - 2px);
     cursor: pointer;
     transition: all var(--transition-base);
+}
+
+@media (max-width: 767px) {
+    .lang-selector {
+        min-width: 36px;
+        min-height: 36px;
+        height: 36px;
+    }
 }
 
 .lang-selector:hover {
