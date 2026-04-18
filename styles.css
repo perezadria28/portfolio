@@ -887,9 +887,20 @@ body {
 .section {
     padding: var(--spacing-3xl) 0;
     position: relative;
-    min-height: calc(100vh - var(--header-height));
-    display: flex;
-    align-items: center;
+}
+
+@media (min-width: 768px) {
+    .section {
+        min-height: calc(100vh - var(--header-height));
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media (max-width: 767px) {
+    .section {
+        padding: var(--spacing-lg) 0;
+    }
 }
 
 @media (max-width: 639px) {
